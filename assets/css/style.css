@@ -1025,6 +1025,10 @@ p {
         top: -5px;
         right: 0; }
 
+
+
+
+        
 /*===========================
        04.SERVICE css 
 ===========================*/
@@ -1226,51 +1230,59 @@ p {
 /*===========================
       11.FOOTER css 
 ===========================*/
-.footer_content .footer_social {
-  margin-top: 45px; }
-  .footer_content .footer_social li {
-    display: inline-block;
-    margin: 0 10px; }
-    .footer_content .footer_social li a {
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
+/* DIV FOOTER */
+
+footer{
+  color: #FFF;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 6rem;
+  margin-top: 8px;
+}
+
+footer .footer__copywriter p{
+  margin-top: 10px;
+}
+footer .footer__redesSociais a{
+  color: #fff;
+  border: 1px solid #d8d8d8;
+  padding: 3px 8px 3px 8px;
+}
+footer .footer__redesSociais a:nth-child(1):hover{
+  color: #be1b7c;
+  border: 1px solid;
+  transition: ease .1s;
+}
+footer .footer__redesSociais a:nth-child(2):hover{
+  color: #3b5998;
+  border: 1px solid;
+  transition: ease .1s;
+}
+footer .footer__redesSociais a:nth-child(3):hover{
+  color: #0e76a8;
+  border: 1px solid;
+  transition: ease .1s;
+}
+footer .footer__redesSociais a:nth-child(4):hover{
+  color: #c71515;
+  border: 1px solid;
+  transition: ease .1s;
+}
+@media (max-width: 999px) {
+  footer{
+      flex-direction: column;
+      padding: 0 0 1rem 0;
       text-align: center;
-      border-radius: 50%;
-      font-size: 18px;
-      color: #646F87;
-      background-color: #29365112;
-      -webkit-transition: all 0.3s ease-out 0s;
-      -moz-transition: all 0.3s ease-out 0s;
-      -ms-transition: all 0.3s ease-out 0s;
-      -o-transition: all 0.3s ease-out 0s;
-      transition: all 0.3s ease-out 0s; }
-      .footer_content .footer_social li a:hover {
-        color: #00A78E; }
-.footer_content .email {
-  font-size: 44px;
-  font-weight: 600;
-  color: #293651;
-  margin-top: 10px; }
-  @media (max-width: 767px) {
-    .footer_content .email {
-      font-size: 20px;
-      margin-top: 25px; } }
-.footer_content .footer_menu {
-  padding-top: 20px; }
-  .footer_content .footer_menu li {
-    display: inline-block;
-    margin: 10px 20px 0; }
-    @media (max-width: 767px) {
-      .footer_content .footer_menu li {
-        margin: 10px 12px 0; } }
-    .footer_content .footer_menu li a {
-      font-size: 16px;
-      font-weight: 600;
-      color: #293651; }
-      @media (max-width: 767px) {
-        .footer_content .footer_menu li a {
-          font-size: 15px; } }
+      text-justify: center;
+  }
+  footer .footer__redesSociais{
+    margin-top: 10px;
+  }
+}
+
 
 /*# sourceMappingURL=style.css.map */
 
@@ -1285,4 +1297,24 @@ p {
  .about_image{
   display: none;
  }                
+}
+
+/* FORMULÁRIO */
+
+form input[type="text"], input[type="number"], textarea{
+  margin: 5px;
+  padding: 5px;
+  width: 20rem;
+  border-radius: 10px;
+}
+form span{
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  form{
+    width: 100vw !important;
+  }
+  .header-form h2{
+    font-size: 20px;
+  }
 }
